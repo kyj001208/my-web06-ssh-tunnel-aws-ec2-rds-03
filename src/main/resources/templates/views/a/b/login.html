@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+
+<style>
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+
+.input-group {
+    margin-bottom: 10px; /* 요소 사이의 간격 조절 */
+}
+
+body > div > a {
+color : #222;
+text-decoration: none;}
+
+body > div > h1 {color :#ffa807;}
+
+
+.g-button {
+    background-color: #ffa807; /* 버튼 배경색 */
+    color: white; /* 버튼 글자색 */
+    padding: 14px 20px; /* 버튼 안쪽 여백 */
+    margin: 8px 0; /* 버튼 간격 */
+    border: none; /* 버튼 테두리 없음 */
+    cursor: pointer; /* 커서 스타일 */
+    width: 100%; /* 버튼 가로길이 */
+}
+
+</style>
+<body>
+
+<div class="container">
+    <a href="/">MONGSUM</a>
+    <hr>
+    <h1>MONGSUM</h1>
+    <div class="input-container">
+        <div class="input-group">
+        
+            <input type="email" id="email" name="email" placeholder="아이디" class="input" value maxlength="20" autocapitalize="off">
+            
+        
+        </div>
+        <div class="input-group">
+            <input type="password" id="password" name="password" placeholder="비밀번호">
+            <input type="password" id="password2" name="password2" placeholder="비밀번호 확인">
+        </div>
+        <div class="input-group">
+            <input type="text" id="name" name="name" placeholder="이름">
+            <input type="text" id="birth" name="birth" placeholder="생년월일">
+        </div>
+       <P>
+            <input type="text" id="t" name="t" placeholder="통신사">
+            <input type="text" id="phnum" name="phnum" placeholder="휴대전화번호">
+       <p>
+
+           <p>
+               <button class="g-button" type="button">회원가입 완료</button>
+          	<p>
+        
+        </div>
+    </div>
+</div>
+	
+	
+
+
+</body>
+</html>

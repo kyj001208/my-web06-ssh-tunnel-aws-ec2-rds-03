@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+  <mapper namespace="com.green.web.domain.mapper.PostMapper">
+  
+  
+  	<!-- //id는 매퍼 메서드 이름과 일치해야한다. -->
+  	<!-- 조회결과를 객체에 매핑하려면 resultType 사용 -->
+  	<select id="findAll" resultType="com.green.web.domain.dto.PostDTO">
+  	select*from posts 
+  	where no >0
+  	order by no desc
+  	</select>
+  	
+  	<insert id="save">
+  		insert into posts(title,content)
+  		values(#{title},#{content})
+  	
+  	</insert>
+  	
+  	<!-- mapper sql문장에 데이터 바인딩 #{필드명 } -->
+  	
+  
+  	
+  
+  </mapper>
